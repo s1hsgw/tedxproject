@@ -1,0 +1,245 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Noto Sans Japanese';
+}
+
+div.eng,
+p.eng {
+    display: none;
+}
+
+div.jp p {
+    font-size: 14px;
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+
+div.eng p {
+    font-size: 16px;
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+
+hr {
+    margin-bottom: 50px;
+    border-color: #f05f40;
+}
+
+a:hover {
+    color: #f05f40;
+}
+
+.btn-default {
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 14px;
+    border: 2px solid #fff;
+}
+
+.btn-default:hover {
+    border: 2px solid #f05f40;
+}
+
+.navbar-default {
+    background-color: rgba(20, 20, 20, 0.6);
+}
+
+.navbar-default .nav > li a {
+    color: #fff;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.7);
+}
+
+@media (min-width: 768px) {
+    .navbar-default {
+        background-color: transparent;
+    }
+    .navbar-default .nav > li a {
+        border-bottom: none;
+    }
+}
+
+.navbar-default.affix {
+    background-color: rgba(20, 20, 20, 0.8);
+}
+
+.navbar-nav > li > a {
+    line-height: 60px;
+    height: 60px;
+    padding: 0 10px;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a,
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
+        color: #fff;
+        background-color: transparent;
+    }
+}
+
+.dropdown-menu {
+    background-color: transparent;
+    border: 1px solid #fff
+}
+
+.dropdown-menu>li {
+    border-bottom: 1px solid #fff;
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+    color: #000;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+
+.navbar-brand {
+    height: 60px;
+}
+
+.navbar-brand img {
+    width: 110px;
+}
+
+.header {
+    background-image: url(../img/light.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+.header .header-content {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position relative;
+}
+
+.header .header-content-inner {
+    position: absolute;
+    max-width: 100%;
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header .header-content .header-content-inner p {
+    font-size: 1.4rem;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 2.0;
+}
+
+@media (min-width: 768px) {
+    .header .header-content .header-content-inner p {
+        font-size: 1.875rem;
+        margin-bottom: 10px;
+    }
+}
+
+.header-img {
+    max-width: 100%;
+}
+
+.about .section-heading {
+    margin-bottom: 40px;
+}
+
+.about {
+    background: #222;
+    color: #fff;
+}
+
+.about-container {
+    margin-bottom: 70px;
+}
+
+@media (min-width: 992px) {
+    .about-container {
+        margin-bottom: 0px;
+    }
+}
+
+.about-box {
+    max-width: 400px;
+    line-height: 2em;
+    margin: 0 auto;
+}
+
+.about-box h3 {
+    margin-bottom: 30px;
+}
+
+.about-box p {
+    margin-bottom: 30px;
+}
+
+.contact {
+    background: #fff;
+}
+
+.contact-mail,
+.contact-mail > a:hover {
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.footer {
+    background: #222;
+    color: #eee;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    margin-bottom: 0;
+    padding: 5px;
+    font-size: 11px;
+}
+
+@media (min-width: 992px) {
+    .footer p {
+        font-size: 14px;
+    }
+}
+
+.circle-icon,
+.circle-icon:visited {
+    border-radius: 50%;
+    width: 74px;
+    height: 74px;
+    background: #222;
+    color: #fff;
+    border: 2px solid #fff;
+    line-height: 70px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 20px;
+}
+
+.circle-icon-twitter {
+    background: #4099ff;
+}
+
+.circle-icon-facebook {
+    background: #3b5998;
+}
+
+.circle-icon:hover {
+    border: 2px solid #f05f40;
+}
