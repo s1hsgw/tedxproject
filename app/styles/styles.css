@@ -1,9 +1,12 @@
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+/*@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Oswald:700);
 body,
 html {
     width: 100%;
     height: 100%;
-    font-family: 'Noto Sans Japanese';
+    font-family: Arial, Roboto, “Droid Sans”, “游ゴシック”, YuGothic, “ヒラギノ角ゴ ProN W3″, “Hiragino Kaku Gothic ProN”, “メイリオ”, Meiryo, sans-serif;
 }
 
 div.eng,
@@ -32,12 +35,21 @@ a:hover {
     color: #f05f40;
 }
 
+.color-text-tedx {
+    color: #e62b1e;
+}
+
 .btn-default {
     border-radius: 3px;
     font-weight: bold;
     font-size: 18px;
     padding: 8px 14px;
-    border: 2px solid #fff;
+    border: 2px solid #f05f40;
+}
+
+.btn-default:hover {
+    background: #222;
+    color: #fff;
 }
 
 .btn-default:hover {
@@ -67,8 +79,8 @@ a:hover {
 }
 
 .navbar-nav > li > a {
-    line-height: 60px;
-    height: 60px;
+    line-height: 50px;
+    height: 50px;
     padding: 0 10px;
 }
 
@@ -106,11 +118,12 @@ a:hover {
 }
 
 .navbar-brand {
-    height: 60px;
+    height: 50px;
+    padding: 10px 0px 5px 10px;
 }
 
 .navbar-brand img {
-    width: 110px;
+    width: 100px;
 }
 
 .header {
@@ -155,6 +168,38 @@ a:hover {
 
 .header-img {
     max-width: 100%;
+}
+
+.slogan {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5rem;
+    text-shadow: 1px 1px 5px #000;
+}
+
+.slogan-small {
+    font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .slogan {
+        font-family: 'Oswald', sans-serif;
+        font-size: 5rem;
+        text-shadow: 1px 1px 3px #000;
+    }
+    .slogan-small {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 479px) {
+    .slogan {
+        font-family: 'Oswald', sans-serif;
+        font-size: 3rem;
+        text-shadow: 1px 1px 3px #000;
+    }
+    .slogan-small {
+        font-size: 2rem;
+    }
 }
 
 .about .section-heading {
@@ -220,17 +265,34 @@ a:hover {
 }
 
 .circle-icon,
-.circle-icon:visited {
+.circle-icon:visited,
+.circle-icon:focus {
     border-radius: 50%;
     width: 74px;
     height: 74px;
-    background: #222;
     color: #fff;
     border: 2px solid #fff;
     line-height: 70px;
     vertical-align: middle;
     text-align: center;
     margin: 20px;
+    font-size: 3em;
+}
+
+.fb-notouchstyle {
+    background: #3b5998;
+}
+
+.fb-touchstyle {
+    background: #627aac;
+}
+
+.tw-notouchstyle {
+    background: #4099ff;
+}
+
+.tw-touchstyle {
+    background: #66adff;
 }
 
 .circle-icon-twitter {
@@ -241,6 +303,21 @@ a:hover {
     background: #3b5998;
 }
 
-.circle-icon:hover {
-    border: 2px solid #f05f40;
+.circle-icon-facebook:hover {
+    background: #627aac;
+}
+
+.circle-icon-twitter:hover {
+    background: #66adff;
+}
+
+@media (max-width: 479px) {
+    .circle-icon,
+    .circle-icon:visited {
+        width: 54px;
+        height: 54px;
+        line-height: 50px;
+        margin: 20px;
+        font-size: 2em;
+    }
 }
