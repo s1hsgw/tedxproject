@@ -57,7 +57,7 @@ a:hover {
 }
 
 .navbar-default {
-    background-color: rgb(20, 20, 20);
+    background-color: rgba(20, 20, 20, 0.8);
 }
 
 .navbar-default .nav > li a {
@@ -78,7 +78,7 @@ a:hover {
 }
 
 .navbar-default.affix {
-    background-color: rgb(20, 20, 20);
+    background-color: rgba(20, 20, 20, 0.8);
 }
 
 .navbar-nav > li > a {
