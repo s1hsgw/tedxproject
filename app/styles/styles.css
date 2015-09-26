@@ -72,6 +72,9 @@ a:hover {
     .navbar-default .nav > li a {
         border-bottom: none;
     }
+    .navbar-default.affix .nav > li>a, .navbar-default.affix .nav>li>a:focus {
+        color: #fff;
+    }
 }
 
 .navbar-default.affix {
@@ -206,6 +209,35 @@ a:hover {
 
 .about-box p {
     margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.event {
+    background-image: url(../img/event_bg.png);
+    background-size: cover;
+    color: #fff;
+}
+
+.event-table {
+    margin: 0 auto;
+    border: 1px solid #eee;
+}
+
+.event-th {
+    padding: 0px 10px;
+}
+
+.first-th {
+    padding-top: 10px;
+}
+
+.last-th {
+    padding-bottom: 10px;
+}
+
+.event-td {
+    padding-right: 10px;
+    text-align: center;
 }
 
 .contact {
