@@ -1,9 +1,6 @@
 body,
 html {
     width: 100%;
-    margin-left: : 0;
-    margin-right: : 0;
-    min-width: 100%;
     height: 100%;
     font-family: Arial, Roboto, “Droid Sans”, “游ゴシック”, YuGothic, “ヒラギノ角ゴ ProN W3″, “Hiragino Kaku Gothic ProN”, “メイリオ”, Meiryo, sans-serif;
 }
@@ -250,6 +247,11 @@ a:hover {
 .speaker-box {
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.speaker-box p {
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .contact {
