@@ -11,15 +11,15 @@ p.eng {
 }
 
 div.jp p {
-    font-size: 14px;
     text-align: justify;
     text-justify: inter-ideograph;
+    font-size: 14px;
 }
 
 div.eng p {
-    font-size: 16px;
     text-align: justify;
     text-justify: inter-ideograph;
+    font-size: 16px;
 }
 
 hr {
@@ -29,6 +29,10 @@ hr {
 
 a:hover {
     color: #e62b1e;
+}
+
+.img-center {
+    margin: 0 auto;
 }
 
 .color-text-tedx {
@@ -72,7 +76,8 @@ a:hover {
     .navbar-default .nav > li a {
         border-bottom: none;
     }
-    .navbar-default.affix .nav > li>a, .navbar-default.affix .nav>li>a:focus {
+    .navbar-default.affix .nav > li>a,
+    .navbar-default.affix .nav>li>a:focus {
         color: #fff;
     }
 }
@@ -168,7 +173,6 @@ a:hover {
     .header .header-content .header-content-inner p {
         font-size: 2.4rem;
         margin-bottom: 10px;
-
     }
 }
 
@@ -240,6 +244,20 @@ a:hover {
     text-align: center;
 }
 
+.speaker-box {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+    .speaker-box {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
 .contact {
     background: #fff;
 }
@@ -262,12 +280,12 @@ a:hover {
 
 .icon-line {
     font-size: 42px;
-    color:#00C300;
+    color: #00C300;
 }
 
 .icon-gmail {
     font-size: 42px;
-    color:#dd4b39;
+    color: #dd4b39;
 }
 
 .footer {
@@ -359,4 +377,3 @@ a:hover {
         font-size: 2em;
     }
 }
-
