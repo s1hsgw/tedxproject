@@ -5,7 +5,6 @@ html {
     font-family: Arial, Roboto, “Droid Sans”, “游ゴシック”, YuGothic, “ヒラギノ角ゴ ProN W3″, “Hiragino Kaku Gothic ProN”, “メイリオ”, Meiryo, sans-serif;
 }
 
-
 div.eng,
 p.eng {
     display: none;
@@ -41,7 +40,7 @@ a:hover {
 }
 
 .btn-default {
-    border-radius: 3px;
+    border-radius: 0px;
     font-weight: bold;
     font-size: 18px;
     padding: 8px 14px;
@@ -59,6 +58,25 @@ a:hover {
 .btn-default:visited,
 .btn-default:focus {
     border: 2px solid #e62b1e;
+}
+
+.btn-tedx {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 0.7em 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    border: 3px solid #e62b1e;
+}
+
+.hvr-shutter-out-horizontal:before {
+    background: #e62b1e;
+}
+
+.hvr-shutter-out-horizontal {
+    border: 3px solid #fff;
 }
 
 .navbar-default {
@@ -82,8 +100,8 @@ a:hover {
         color: #fff;
     }
     .navbar-nav.navbar-right:last-child {
-    margin-right: 0px;
-}
+        margin-right: 0px;
+    }
 }
 
 .navbar-default.affix {
@@ -160,7 +178,7 @@ a:hover {
     width: 80%;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -45%);
+    transform: translate(-50%, -50%);
 }
 
 .header .header-content .header-content-inner p {
@@ -175,8 +193,11 @@ a:hover {
 
 @media (min-width: 768px) {
     .header .header-content .header-content-inner p {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
         margin-bottom: 10px;
+    }
+    .btn-tedx {
+        font-size: 2.3rem;
     }
 }
 
