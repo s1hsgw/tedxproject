@@ -93,6 +93,8 @@ a:hover {
     background-color: #fff;
     width: 100%;
     color: #222;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .speaker-box h3 {
