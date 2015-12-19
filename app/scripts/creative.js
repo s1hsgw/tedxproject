@@ -11,16 +11,12 @@
         target: '.navbar-fixed-top',
         offset: 51
     })
-    $('a.page-scroll').click(function() {
+    $('nav a.page-scroll').click(function() {
         $('.navbar-toggle:visible').click();
-    });
-    $("h1").fitText(1.2, {
-        minFontSize: '35px',
-        maxFontSize: '65px'
     });
     $('#mainNav').affix({
         offset: {
-            top: 100
+            top: 300
         }
     })
     new WOW().init();
