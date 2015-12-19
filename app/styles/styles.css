@@ -1,7 +1,7 @@
 body,
 html {
     width: 100%;
-    height: 100%;
+    height: 100%%;
     font-family: Arial, Roboto, “Droid Sans”, “游ゴシック”, YuGothic, “ヒラギノ角ゴ ProN W3″, “Hiragino Kaku Gothic ProN”, “メイリオ”, Meiryo, sans-serif;
 }
 
@@ -16,12 +16,6 @@ div.jp p {
     font-size: 14px;
 }
 
-div.eng p {
-    text-align: justify;
-    text-justify: inter-ideograph;
-    font-size: 16px;
-}
-
 hr {
     margin-bottom: 50px;
     border-color: #e62b1e;
@@ -31,7 +25,6 @@ a, a:hover {
     color: #e62b1e;
     text-decoration: none;
 }
-
 
 .img-center {
     margin: 0 auto;
@@ -173,14 +166,14 @@ a, a:hover {
 }
 
 .header {
-    background-image: url(../img/mountain.jpg);
+    background-image: url(../img/header-bg.jpg);
     background-size: cover;
-    height: 100%;
     width: 100%;
+    height: 100%;
 }
 
 .header .header-content {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.6);
     padding: 0;
     width: 100%;
     height: 100%;
@@ -190,6 +183,9 @@ a, a:hover {
 
 .header .header-content-inner {
     position: absolute;
+    display: none;
+    opacity: 1;
+    z-index: 500;
     max-width: 100%;
     width: 80%;
     left: 50%;
@@ -197,28 +193,38 @@ a, a:hover {
     transform: translate(-50%, -50%);
 }
 
-.header .header-content .header-content-inner p {
-    font-size: 1.3rem;
+.header-button {
+    display: inline-block;
+    width: 80%;
+    height: auto;
+    font-size: 1.5em;
+    border: 2px solid #e62b1e;
+    background: #e62b1e;
     color: #fff;
-    text-shadow: 1px 1px 2px #000;
-    margin-bottom: 10px;
+    margin-top: 30px;
     text-align: center;
-    line-height: 2.0;
-    font-weight: bold;
+    border-radius: 3px;
+    padding: 10px 0;
+}
+
+.header-button:hover {
+    background: #e62b1e;
+    color: #fff;
 }
 
 @media (min-width: 768px) {
-    .header .header-content .header-content-inner p {
-        font-size: 2.5rem;
-        margin-bottom: 10px;
+    .header-button {
+        background: transparent;
+        font-size: 2.3em;;
     }
-    .btn-tedx {
-        font-size: 2.3rem;
+    .header-button:hover {
+        background: #e62b1e;
+        color: #fff;
     }
 }
 
 .header-img {
-    max-width: 60%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -342,76 +348,5 @@ a, a:hover {
 @media (min-width: 992px) {
     .footer p {
         font-size: 14px;
-    }
-}
-
-.circle-icon,
-.circle-icon:visited,
-.circle-icon:focus {
-    border-radius: 50%;
-    width: 74px;
-    height: 74px;
-    color: #fff;
-    border: 2px solid #fff;
-    line-height: 70px;
-    vertical-align: middle;
-    text-align: center;
-    margin: 20px;
-    font-size: 3em;
-}
-
-.fb-notouchstyle {
-    background: #3b5998;
-}
-
-.fb-touchstyle {
-    background: #627aac;
-}
-
-.tw-notouchstyle {
-    background: #4099ff;
-}
-
-.tw-touchstyle {
-    background: #66adff;
-}
-
-.circle-icon-twitter {
-    background: #4099ff;
-}
-
-.circle-icon-facebook {
-    background: #3b5998;
-}
-
-.circle-icon-facebook:hover {
-    background: #627aac;
-}
-
-.circle-icon-twitter:hover {
-    background: #66adff;
-}
-
-.circle-icon-line {
-    border-radius: 50%;
-    width: 74px;
-    height: 74px;
-    color: #fff;
-    border: 2px solid #fff;
-    line-height: 70px;
-    vertical-align: middle;
-    text-align: center;
-    margin: 20px;
-    display: inline-block;
-}
-
-@media (max-width: 479px) {
-    .circle-icon,
-    .circle-icon:visited {
-        width: 54px;
-        height: 54px;
-        line-height: 50px;
-        margin: 20px;
-        font-size: 2em;
     }
 }
